@@ -1,7 +1,29 @@
 {
   "expo": {
-    "name": "gt",
+    "name": "Retail Force",
     "slug": "gt",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "icon": "./assets/Logo.png",
+    "splash": {
+      "image": "./assets/Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "18fc51b6-980d-424c-b843-489c350a4767"
+      }
+    }
   }
 }
